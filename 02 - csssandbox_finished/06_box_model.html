@@ -7,7 +7,7 @@
   <title>Box Model / Margin & Padding</title>
   <style>
     /* CSS Reset */
-    * {
+    *body {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -20,13 +20,21 @@
 
       /* Padding on all sides */
       padding: 20px;
-
+    }
+    .flex{
+      height: 100vh;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    </style>
       /* Padding per side */
       padding-top: 10px;
       padding-right: 20px;
       padding-bottom: 10px;
       padding-left: 20px;
-
+      <div class:"flex">
       /* Padding shorthand = top, right, bottom, left */
       padding: 10px 20px 10px 20px;
 
@@ -52,7 +60,6 @@
     .box h3 {
         padding-bottom: 10px;
       }
-  </style>
 </head>
 <body>
   <div class="box">

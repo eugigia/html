@@ -17,23 +17,34 @@
         color: yellow
         background-color:  black;
       }
-    </style>
+      .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      </style>
   </head>
   <body>
+    <div class="flex">
     <div id="main-header" class="card">
       <h1>My Website</h1>
       <p>A site about me</p>
     </div>
+    <div>
     <ul id="main-nav">
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
+    </div>
+    </div>
+
+    <div class="flex">
     <div id="about" class="card">
     <h3>About</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="enhance">In cumque aspernatur, porro impedit eius</span>deleniti distinctio aut ducimus animi sed!</p>
     </div>
-
     <div id="contact" class="card">
       <h3>Contact Me</h3>
       <ul>
@@ -41,6 +52,7 @@
         <li>Phone:  (555) 555-5555</li>
         <li>Email: me@somethingcool.com</li>
       </ul>
+    </div>
     </div>
 
     <div id="footer">
